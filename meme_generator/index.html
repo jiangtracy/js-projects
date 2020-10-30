@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Meme Generator</title>
+</head>
+<body>
+  <header id="landing">
+    <div class="landing-container">
+      <h1>Hello Meme Designer</h1>
+      <p>Ready To Create Your Own Meme?</p>
+      <a href="#title" class="btn">Let's Get Started!</a>
+    </div>
+  </header>
+
+  <main>
+     <div class="jumbotron jumbotron-fluid">
+      <h1 id='title' class='text-center'>Meme Generator</h1>
+      <form id=#meme>
+        <div class="container">
+          <div class="form-group" id="form">
+            <label for="image">Image</label>
+            <input type="text" class="form-control" id="image" placeholder="Please paste in the image url here.">
+          </div>
+          <div class="form-group">
+            <label for="line-1">Line 1</label>
+            <input type="text" class="form-control" id="line-1">
+            <small id="line-1-help" class="form-text text-dark">This will appear on the top half of your choosen image</small>
+          </div>
+          <div class="form-group">
+            <label for="line-2">Line 2</label>
+            <input type="text" class="form-control" id="line-2">
+            <small id="line-2-help" class="form-text text-dark">This will appear on the bottom half of your choosen image</small>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Finalize My Design</button>
+          <small>You will be able to delete it after finalzing your design! </small>
+        </div>
+      </form>
+    </div>
+
+    <div class="containerMeme">
+      <div class="cust-container">
+        <div class="combined-container">
+          <div class="img-container">
+            <img src="shock.jpeg" alt="">
+          </div>
+          <div class="top">Quit Staring!</div>
+          <div class="bot">Make Your Own!</div> 
+        </div>
+        <div class='sample text-center'>I am a sample</div>
+      </div> 
+    </div>
+  </main>
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+  <script src="app.js"></script>
+</body>
+</html>
